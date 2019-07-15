@@ -1,18 +1,15 @@
 // 引入express中间件
 var express = require('express')
+var path = require('path')
 var app = express()
-// eslint-disable-next-line no-path-concat
-app.use(express.static(__dirname + 'dist')) // 设置静态文件目录
-// app.use(express.static('../../dist'))
-app.get('/', function (req, res) {
-})
-app.get('/nodeDemo', function (req, res) {
-  res.send('用户列表页面')
-})
-
+app.use(express.static(path.resolve('.') + '/dist')) // 设置静态文件目录
 // app.get('/', function (req, res) {
-//   res.send('Hello World')
+//   res.send('643183781')
 // })
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 
 var server = app.listen(8081, function () {
   var host = server.address().address
