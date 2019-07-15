@@ -10,7 +10,8 @@ module.exports = {
     },
     'postcss-pxtorem': {
       rootValue: 75,
-      propList: ['*', '!border*'] //propList 表示不匹配
+      propList: ['*', '!border*'] ,//propList 表示不匹配
+      "selectorBlackList": ["weui-", 'vux-', 'scroller-']
     }
   }
 }
