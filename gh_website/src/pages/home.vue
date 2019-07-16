@@ -23,12 +23,20 @@
             <div class="core-business-header">N大核心业务</div>
             <div class="core-business-box">
               <div  class="core-business-item" v-for="(item, index) in  coreBusiness" :key="index">
-                 <div class="core-business-item-horver display-none" >{{item}}</div>
+                 <div class="core-business-item-horver display-block" >{{item}}</div>
                </div>
             </div>
         </div>
+        <div class="our-server">
+            <div class="core-business-header">Why choose us</div>
+            <div class="our-server-main">
+
+            </div>
+        </div>
       </div>
-      <div class="footer"></div>
+      <div class="footer">
+
+      </div>
   </div>
 </template>
 <script>
@@ -37,7 +45,7 @@ export default {
     return {
       header: ['首页', '核心业务', '行业应用', '典型案例', '关于国昊'],
       carousel: ['一站式服务，多元化发展', '绿色电网，绿色能源', '选择我们，值得拥有', '期待您的加入'],
-      coreBusiness: ['电力设计', '电力总承包', '调试业务', '运维业务']
+      coreBusiness: [' 电能优化方案', '电力承包', '调试业务', '运维业务']
     }
   }
 }
@@ -69,8 +77,8 @@ export default {
     width: 100%;
     padding: 0px 220px;
     box-sizing: border-box;
-    height: 50px;
-    line-height: 50px;
+    height: 80px;
+    line-height: 80px;
     font-size: 20px;
     color: #ffffff;
     display: flex;
@@ -145,5 +153,19 @@ export default {
   }
   .display-block{
     display: block;
+  }
+  .our-server-main{
+    width: calc(100% - 200px);
+    margin: 0 100px;
+    margin-top: 50px;
+    min-height: 400px;
+    box-shadow: 1px 5px 10px #C0C0C0;
+    border-radius: 25px;
+  }
+  .footer{
+    margin-top: 50px;
+    width: 100%;
+    min-height: 400px;
+    background-color: #000000;
   }
 </style>
