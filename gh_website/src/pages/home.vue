@@ -1,18 +1,5 @@
 <template>
   <div class="home">
-      <div class="header">
-       <div class="header-item">
-         <i>大连国昊电力有限公司</i>
-       </div>
-       <div class="header-item">
-         二维码
-       </div>
-      </div>
-      <div class="nav">
-         <ul>
-          <li v-for="(item, index) in header" :key="index"> {{item}} </li>
-        </ul>
-      </div>
       <div class="main">
         <el-carousel :interval="5000" arrow="always" height="500px">
           <el-carousel-item v-for="item in carousel" :key="item">
@@ -34,22 +21,19 @@
             </div>
         </div>
       </div>
-      <div class="footer">
-
-      </div>
   </div>
 </template>
 <script>
 export default {
   data () {
     return {
-      header: ['首页', '核心业务', '行业应用', '典型案例', '关于国昊'],
       carousel: ['一站式服务，多元化发展', '绿色电网，绿色能源', '选择我们，值得拥有', '期待您的加入'],
       coreBusiness: [' 电能优化方案', '电力承包', '调试业务', '运维业务']
     }
+  },
+  methods: {
   }
 }
-
 </script>
 <style>
   .home{
@@ -67,7 +51,7 @@ export default {
     text-align: center;
   }
   .header-item:nth-of-type(1){
-    font-size: 45px;
+    font-size: 40px;
   }
   .nav{
     margin: 0 auto;
@@ -163,9 +147,25 @@ export default {
     border-radius: 25px;
   }
   .footer{
+    display: flex;
+    padding: 50px 100px;
+    box-sizing: border-box;
     margin-top: 50px;
     width: 100%;
     min-height: 400px;
     background-color: #000000;
+    color: #ffffff;
+  }
+  .footer-item{
+    margin-left: 50px;
+    margin-right: 250px;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 40px;
+
+  }
+  .footer-item-text{
+    padding-left: 20px;
+    margin-bottom: 40px;
   }
 </style>

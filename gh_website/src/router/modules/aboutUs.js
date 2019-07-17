@@ -1,14 +1,14 @@
 import layout from '@/pages/layout'
-import Home from '@/pages/home'
+import aboutUs from '@/pages/about-us'
 export default[
   {
     path: '/',
     component: layout,
     children: [
       {
-        path: '',
-        name: 'home',
-        component: Home
+        path: '/aboutUs',
+        name: 'aboutUs',
+        component: aboutUs
       }
     ]
   }
