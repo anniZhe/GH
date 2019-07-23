@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.3237fc59229a50c6e6e5f22c36329927.css"],"names":[],"mappings":"AACA,KAEE,WACF,CAEA,WAJE,UAMF","file":"app.3237fc59229a50c6e6e5f22c36329927.css","sourcesContent":["\n#app {\n  width: 100%;\n  height: 100%;\n}\n\n.home{\n  width: 100%;\n}\n"]}
