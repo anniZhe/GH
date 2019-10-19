@@ -216,6 +216,7 @@ a {
   width: 100%;
   height: 100%;
   background: url(./images/caseImg/sxtj-bg.png);
+  background-size: cover;
 }
 
 .project-child .childTag {
