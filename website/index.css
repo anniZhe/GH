@@ -1,4 +1,5 @@
 html, body{
+  min-width: 1366;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -20,7 +21,7 @@ a {
   color: #fff;
 }
 .min-width{
-  min-width: 1000px;
+  min-width: 1366px;
 }
 .home{
   width: 100%;
@@ -96,6 +97,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
 }
 .main-title{
   padding: 40px 0px;
@@ -141,11 +143,20 @@ a {
   margin-top: 10px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  /* justify-content: space-between; */
   background-color: #eaf3f8;
 }
+.core-business:nth-of-type(2n){
+  flex-direction: row-reverse;
+}
+.img-core-transition{
+  width: 40% !important;
+  transition:width 1s;
+	-webkit-transition:width 1s; /* Safari */
+}
 .img-core{
-  width: 53vw;
+  width: 0px;
   height: 35vw;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -167,10 +178,11 @@ a {
   background-image: url(./images/caseImg/施工.jpg);
 }
 .core-content{
+  display: none;
   width: 70%;
 }
 .info-core{
-  width: 45vw;
+  width: 60%;
   height: 35vw;
   box-sizing: border-box;
 }
@@ -187,6 +199,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .project-main{
   width: 100%;
@@ -207,6 +220,10 @@ a {
 .project-child img{
   width: 100%;
   height: 100%;
+  transition: transform 0.3s;
+}
+.project-child img:hover{
+  transform: scale(1.1)
 }
 .project-child .childHide {
   display: none;
